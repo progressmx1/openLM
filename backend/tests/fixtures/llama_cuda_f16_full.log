@@ -1,0 +1,20 @@
+0.00.306.660 I cmn  common_fit_a: fitting params to device memory ...
+0.00.306.660 I cmn  common_fit_a: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.00.306.704 I common_params_fit_impl: getting device memory data for initial parameters:
+0.00.540.446 I common_params_fit_impl: projected to use 3813 MiB of device memory vs. 7068 MiB of free device memory
+0.00.540.452 I common_params_fit_impl: will leave 3254 >= 1024 MiB of free device memory, no changes needed
+0.00.540.455 I common_fit_params: successfully fit params to free device memory
+0.00.540.781 I common_fit_params: fitting params to free memory took 0.23 seconds
+0.00.579.704 I llama_model_loader: - kv   5:                          qwen2.block_count u32              = 28
+0.00.579.785 I llama_prepare_model_devices: using device CUDA0 (NVIDIA GeForce RTX 4070 Laptop GPU) (0000:01:00.0) - 7068 MiB free
+0.00.728.304 I load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+0.01.220.103 I load_tensors: offloading output layer to GPU
+0.01.220.108 I load_tensors: offloading 27 repeating layers to GPU
+0.01.220.108 I load_tensors: offloaded 29/29 layers to GPU
+0.01.220.114 I load_tensors:   CPU_Mapped model buffer size =   445.12 MiB
+0.01.220.115 I load_tensors:        CUDA0 model buffer size =  2944.68 MiB
+0.04.803.618 I llama_context: n_ctx                 = 28416
+0.04.805.438 I llama_context:  CUDA_Host  output buffer size =     0.58 MiB
+0.04.847.901 I llama_kv_cache:      CUDA0 KV buffer size =   777.00 MiB
+0.04.881.457 I sched_reserve:      CUDA0 compute buffer size =    92.26 MiB
+0.04.881.468 I sched_reserve:  CUDA_Host compute buffer size =    39.77 MiB

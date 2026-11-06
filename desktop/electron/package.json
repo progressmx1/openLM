@@ -1,0 +1,13 @@
+{
+  "name": "local-ai-desktop-shell",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "description": "Electron shell for the Local AI Desktop assistant",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "33.2.0"
+  }
+}

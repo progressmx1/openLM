@@ -1,0 +1,54 @@
+# Runtime data, databases, logs, generated files (root folder only)
+/data/
+*.db
+*.db-wal
+*.db-shm
+*.log
+# Real llama.cpp logs used as test fixtures
+!backend/tests/fixtures/*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Node / frontend
+node_modules/
+.npm-cache/
+.tmp/
+desktop/frontend/dist/
+desktop/electron/dist/
+desktop/electron/out/
+*.tsbuildinfo
+.vite/
+
+# Secrets and local config
+.env
+.env.local
+*.pem
+*.key
+
+# Downloaded llama.cpp runtimes (scripts/install-llama-runtimes.ps1)
+/runtimes/
+
+# Model weights (never commit). Anchored: backend/app/models is source code.
+/models/
+*.gguf
+*.bin
+*.safetensors
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local tool config (machine-specific paths)
+/.claude/

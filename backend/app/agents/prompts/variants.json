@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "_comment": "Per-model prompt variants. The first entry whose 'match' (case-insensitive substring of the model file name) matches wins. tool_format: 'auto' = native OpenAI tools when the model's chat template supports them, else the <tool_call> text protocol; 'native' / 'text' force one; 'json' = every step is a JSON-schema-constrained tool call (grammar), for models that will not emit parseable tool calls. temperature overrides the agent's sampling temperature.",
+  "variants": [
+    {
+      "match": "deepseek-r1",
+      "tool_format": "text",
+      "temperature": 0.6,
+      "notes": "R1 distills have no tool-call template and think inside <think> tags; use the text protocol and strip reasoning."
+    },
+    {
+      "match": "qwen2.5-coder",
+      "tool_format": "json",
+      "temperature": 0.2,
+      "notes": "Measured: never emits parseable native tool calls (DECISIONS D5); JSON-schema constrained steps work."
+    },
+    {
+      "match": "qwen3",
+      "tool_format": "auto",
+      "temperature": 0.6
+    },
+    {
+      "match": "",
+      "tool_format": "auto",
+      "temperature": 0.3
+    }
+  ]
+}
