@@ -52,6 +52,5 @@ Thumbs.db
 
 /docs/
 *.md
-
 # Local tool config (machine-specific paths)
 /.claude/
